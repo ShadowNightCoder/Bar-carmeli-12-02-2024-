@@ -1,0 +1,11 @@
+<header id="header-container">
+    <div id="icon"><img src="./../../../assets/img/rainy-day.png" alt="rainy-day img">
+        <div id="title">weather</div>
+    </div>
+    <div id="slider_and_links">
+        <a routerLink="/Home" class="grid-item">Home</a>
+        <a routerLink="/Favorit-city" class="grid-item">Favorits</a>
+        <mat-slide-toggle (change)="toggleTheme()" #darkModeSwitch></mat-slide-toggle>
+
+    </div>
+</header>

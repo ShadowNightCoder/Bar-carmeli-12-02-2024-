@@ -1,0 +1,17 @@
+.day-card {
+    width: 10em;
+    color: var(--primary-text-color);
+    font-size: 1.1em;
+    font-weight: 500;
+
+    .weather-day-img {
+        width: 100%;
+    }
+
+    .day-name {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 1.2em;
+    }
+}

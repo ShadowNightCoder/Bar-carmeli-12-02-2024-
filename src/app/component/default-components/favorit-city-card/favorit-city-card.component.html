@@ -1,0 +1,14 @@
+<div class="container" (click)="sendToHome()">
+    <mat-card class="example-card OverRideBG">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{favCity.name}}</mat-card-title>
+            <mat-card-subtitle>ID: {{favCity.cityid}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                The weather right now in {{favCity.name}} is {{favCity.weather}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>

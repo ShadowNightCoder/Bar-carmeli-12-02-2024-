@@ -1,0 +1,12 @@
+<div id="weather-container">
+  <app-search (citySelected)="reciveCityCurrentWeather($event.cityKey, $event.cityName)" [cityTime]="CourentCityName"></app-search>
+  <app-card-city [CourentCityKey]="CourentCityKey" [CourentCityName]="CourentCityName" [CityInfo]="CourentCity"></app-card-city>
+  <app-toggle-button></app-toggle-button>
+  <div class="card-box">
+    <div class="five-days-weather" *ngFor="let weatherDay of fiveDaysForecastArray">
+      <div class="card-box-child">
+        <app-card [weatherForDay]="weatherDay"></app-card>
+      </div>
+    </div>
+  </div>
+</div>

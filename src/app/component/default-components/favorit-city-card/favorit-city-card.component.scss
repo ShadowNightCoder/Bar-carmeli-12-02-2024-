@@ -1,0 +1,25 @@
+.example-card {
+    max-width: 400px;
+    margin: auto;
+    background: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--primary-text-color);
+
+    mat-card-subtitle {
+        color: var(--primary-text-color);
+    }
+}
+
+.example-header-image {
+    background-image: url('./../../../../assets/img/weather-forecast.png');
+    background-size: cover;
+}
+
+.container {
+    margin: 2em 0;
+}
+
+.OverRideBG {
+    background: var(--primary-card);
+}

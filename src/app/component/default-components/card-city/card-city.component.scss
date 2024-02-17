@@ -1,0 +1,93 @@
+.cityNow {
+    width: 100%;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-text-color);
+
+    .card {
+        padding: 1em;
+        width: 20em;
+        background-color: var(--primary-card-city);
+        border: 3px solid var(--primary-card-city-border);
+        border-radius: 10%;
+        font-size: 1.1em;
+        color: var(--primary-card-city-color);
+
+        .text-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            div {
+                padding: 0.1em 0;
+            }
+        }
+    }
+
+    .cityName {
+        font-size: 1.4em;
+        text-decoration: underline 1px double var(--primary-card-city-border);
+        font-weight: 500;
+    }
+
+    .cityTimeNow,
+    .cityWeather,
+    .cityWeatherInMetric {
+        font-size: 1.1em;
+    }
+
+    .buttons {
+        .btn {
+            color: var(--primary-text-color);
+        }
+
+        .btn:focus,
+        .btn:active {
+            outline: none;
+        }
+
+        .Add-City {
+            font-size: 1.1em;
+            background-color: var(--primary-button-add);
+        }
+
+        .Remove-City {
+            font-size: 1.1em;
+            background-color: var(--primary-button-remove);
+        }
+    }
+
+}
+
+
+
+.switch-button {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    background: -moz-linear-gradient(top, var(--primary-switch-button-first-color) 0%, var(--primary-switch-button-second-color) 100%);
+    background: -webkit-linear-gradient(top, var(--primary-switch-button-first-color) 0%, var(--primary-switch-button-second-color) 100%);
+    background: linear-gradient(to bottom, var(--primary-switch-button-first-color) 0%, var(--primary-switch-button-second-color) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heart-icon {
+    font-size: 2.4em;
+    transition: font-size 0.3s ease;
+}
+
+.switch-button.active .heart-icon {
+    font-size: 3.4em;
+}
+
+
+.switch-button.active:hover {
+    transform: scale(1.1);
+}

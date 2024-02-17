@@ -1,0 +1,49 @@
+#weather-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.five-days-box {
+    width: 100%;
+    height: 100%;
+}
+
+.card-box {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+    .card-box-child {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        flex: 1 0 20%;
+    }
+}
+
+.five-days-weather {
+    width: fit-content;
+    height: fit-content;
+    margin: 1em 0.5em;
+}
+
+.day {
+
+    .weather-img {
+        width: 100%;
+    }
+
+    .day-name {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 1.2em;
+
+    }
+}

@@ -1,0 +1,28 @@
+<div class="search-container">
+    <div class="search-box">
+        <div class="search-input">
+            <mat-form-field class="example-full-width">
+                <mat-label>Search City</mat-label>
+                <input matInput placeholder="Search City" [matAutocomplete]="auto" (input)="autoComplete()"
+                    [(ngModel)]="inputLive">
+                <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let city of cityList" [value]="city.name"
+                        (onSelectionChange)="onOptionSelected(city)">
+                        {{city.name}} of {{city.country}}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+        </div>
+
+
+        <div class="input-group-btn">
+            <button class="btn btn-default" type="submit" (click)="onSubmit();" [disabled]="!optionSelected">
+                <i class="glyphicon glyphicon-search"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="error-container" *ngIf="badInput">
+    <div class="error_wrong_input">{{this.errorShow}}</div>
+</div>
